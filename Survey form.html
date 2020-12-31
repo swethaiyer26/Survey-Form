@@ -1,0 +1,63 @@
+<html>
+<head>
+<h1 id="title" align="center">Survey Form</h1>
+<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+<div>
+<p id="description" align="center"><strong>Free Code Camp Survey Form</strong></p>
+<br>
+<form id="survey-form">
+<label for="name" id="name-label"><strong>Name:</strong></label>
+<input type="text" id="name" placeholder="Enter your name" required>
+<br><br>
+<label for="email" id="email-label"><strong>Email:</strong></label>
+<input type="email" id="email"  placeholder="Enter valid email" required>
+<br><br>
+<label for="number" id="number-label"><strong>Number:</strong></label>
+<input type="number" id="number" min="1" max="30" placeholder="Number">
+<br><br>
+
+<label for="courses"><strong>Choose a course:</strong></label>
+<select id="dropdown" name="courses">
+<option value=""></option>
+<option value="Html/CSS">Html/Css</option>
+<option value="Javascript">Javascript</option>
+<option value="React">React</option>
+<option value="Nodejs">Nodejs</option>
+</select>
+<br>
+<br>
+
+<h2>Will you recommend free code camp courses to others?</h2>
+<input type="radio" id="radio1" value="Yes" name="course">Yes
+<input type="radio" id="radio2" value="No" name="course">No
+<input type="radio" id="radio3" value="Never" name="course">Never
+<br>
+<h2>Was there improvement in your coding skills?</h2>
+<input type="radio" id="radio4" value="Yes" name="coding">Yes
+<input type="radio" id="radio5" value="No" name="coding">No
+<input type="radio" id="radio6" value="Never" name="coding">Never
+<br>
+
+
+<h2>Which of the areas do you think the course covers?</h2>
+<label>
+<input type="checkbox"  value="1" name="check" />Improves your coding skills</label>
+<label>
+<input type="checkbox"  value="1" name="check" />Helps you for your interviews</label>
+<label>
+<input type="checkbox"  value="1" name="check" />Makes you proficient in your subject</label>
+
+<br>
+
+
+<h2>Additional Comments:</h2>
+<textarea name="message" rows="10" cols="50"></textarea>
+<br>
+<br>
+<input type="submit" id="submit" value="Submit Form"> 
+</form>
+</div>
+</body>
+</html>
